@@ -1,0 +1,6 @@
+    polygons = np.array([
+        [(400,height),(1200,height),(800,200)]
+    ])
+    masked_image = cv2.bitwise_and(image,mask)
+    cropped_image = region_of_interest(canny)
+    cv2.imshow('result',cropped_image)
